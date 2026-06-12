@@ -58,16 +58,24 @@ export default function Slide18Vision({ step }: SlideProps) {
         >
           第一生产力完成了形态迁移，没有换主人
         </text>
+        <line
+          x1="64"
+          y1="648"
+          x2="1216"
+          y2="648"
+          stroke="#E3E2DF"
+          strokeWidth="1"
+        />
         <text
-          x="64"
+          x="1216"
           y="690"
           fontFamily="Noto Sans CJK SC"
           fontSize="18"
           fill="#8C8B85"
+          textAnchor="end"
         >
           14 / 15
         </text>
-        <circle cx="1180" cy="684" r="10" fill="#B0A9DA" />
       </Step>
     </svg>
   );

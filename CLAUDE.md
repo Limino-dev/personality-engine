@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 常用命令
 
 ```bash
-npm install              # 注意：React 19 RC 与 next 15 有 peer dep 冲突，必要时加 --legacy-peer-deps
+npm install              # React 19 stable + next 15.5.19，无 peer dep 冲突
 npm run dev              # 开发服务器 http://localhost:3000
 npm run build            # 生产构建（验证 SVG-JSX 转换、TS 类型）
 npm run lint             # eslint
