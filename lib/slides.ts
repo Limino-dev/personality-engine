@@ -31,6 +31,10 @@ const Slide03BigModelMobile = dynamic(
   () => import("@/components/slides/Slide03BigModel.mobile"),
   { ssr: false }
 );
+const Slide02Part01Mobile = dynamic(
+  () => import("@/components/slides/Slide02Part01.mobile"),
+  { ssr: false }
+);
 
 export interface SlideProps {
   step: number;
@@ -45,7 +49,7 @@ export interface SlideMeta {
 export const SLIDES: SlideMeta[] = [
   { Component: Slide01Cover, MobileComponent: Slide01CoverMobile, nostep: true },
   // Phase 2 待替换：以下 17 个 MobileComponent 暂时指向桌面版作为占位
-  { Component: Slide02Part01, MobileComponent: Slide02Part01, nostep: true },
+  { Component: Slide02Part01, MobileComponent: Slide02Part01Mobile, nostep: true },
   { Component: Slide03BigModel, MobileComponent: Slide03BigModelMobile, nostep: false },
   { Component: Slide04TwoGaps, MobileComponent: Slide04TwoGaps, nostep: false },
   { Component: Slide05ExperienceCurve, MobileComponent: Slide05ExperienceCurve, nostep: false },
