@@ -22,7 +22,7 @@ import Slide17WorkLogic from "@/components/slides/Slide17WorkLogic";
 import Slide18Vision from "@/components/slides/Slide18Vision";
 import Slide19Landscape from "@/components/slides/Slide19Landscape";
 
-// Phase 1 移动版（已完成）— 用 dynamic ssr:false 包装，避免打入 server bundle
+// 移动版（Phase 1 + Phase 2 全部完成）— 用 dynamic ssr:false 包装，避免打入 server bundle
 const Slide01CoverMobile = dynamic(
   () => import("@/components/slides/Slide01Cover.mobile"),
   { ssr: false }
@@ -112,7 +112,6 @@ export interface SlideMeta {
 
 export const SLIDES: SlideMeta[] = [
   { Component: Slide01Cover, MobileComponent: Slide01CoverMobile, nostep: true },
-  // Phase 2 待替换：以下 17 个 MobileComponent 暂时指向桌面版作为占位
   { Component: Slide02Part01, MobileComponent: Slide02Part01Mobile, nostep: true },
   { Component: Slide03BigModel, MobileComponent: Slide03BigModelMobile, nostep: false },
   { Component: Slide04TwoGaps, MobileComponent: Slide04TwoGapsMobile, nostep: false },
