@@ -6,19 +6,16 @@ const SHACKLES = [
     title: "时间枷锁，解除",
     l1: "判断力曾被工时锁死",
     l2: "现在可以永不停机",
-    x: 22,
   },
   {
     title: "并发枷锁，解除",
     l1: "一个人只能在一处判断",
     l2: "人格可同时在千处工作",
-    x: 255,
   },
   {
     title: "寿命枷锁，解除",
     l1: "几十年功力一代清零",
     l2: "人格资产可延续继承",
-    x: 488,
   },
 ];
 
@@ -52,7 +49,7 @@ export default function Slide14Productivity({ step }: SlideProps) {
               <g key={i} transform={`translate(${i * 233},0)`}>
                 <rect x="0" y="0" width="214" height="150" rx="16" fill="#F2F1EF" />
                 <text
-                  x={s.x}
+                  x="22"
                   y="44"
                   fontFamily="Noto Sans CJK SC"
                   fontSize="15"
@@ -62,7 +59,7 @@ export default function Slide14Productivity({ step }: SlideProps) {
                   {s.title}
                 </text>
                 <text
-                  x={s.x}
+                  x="22"
                   y="88"
                   fontFamily="Noto Sans CJK SC"
                   fontSize="12.5"
@@ -71,7 +68,7 @@ export default function Slide14Productivity({ step }: SlideProps) {
                   {s.l1}
                 </text>
                 <text
-                  x={s.x}
+                  x="22"
                   y="116"
                   fontFamily="Noto Sans CJK SC"
                   fontSize="12.5"
