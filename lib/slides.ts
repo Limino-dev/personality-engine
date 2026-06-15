@@ -47,6 +47,10 @@ const Slide06SubjectivityMobile = dynamic(
   () => import("@/components/slides/Slide06Subjectivity.mobile"),
   { ssr: false }
 );
+const Slide07Part02Mobile = dynamic(
+  () => import("@/components/slides/Slide07Part02.mobile"),
+  { ssr: false }
+);
 
 export interface SlideProps {
   step: number;
@@ -66,7 +70,7 @@ export const SLIDES: SlideMeta[] = [
   { Component: Slide04TwoGaps, MobileComponent: Slide04TwoGapsMobile, nostep: false },
   { Component: Slide05ExperienceCurve, MobileComponent: Slide05ExperienceCurveMobile, nostep: false },
   { Component: Slide06Subjectivity, MobileComponent: Slide06SubjectivityMobile, nostep: false },
-  { Component: Slide07Part02, MobileComponent: Slide07Part02, nostep: true },
+  { Component: Slide07Part02, MobileComponent: Slide07Part02Mobile, nostep: true },
   { Component: Slide08PersonalityEngine, MobileComponent: Slide08PersonalityEngine, nostep: false },
   { Component: Slide09Misconceptions, MobileComponent: Slide09Misconceptions, nostep: false },
   { Component: Slide10LStack, MobileComponent: Slide10LStack, nostep: false },
