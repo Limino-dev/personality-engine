@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { SLIDES, stepsOf } from "@/lib/slides";
+import { useIsMobile } from "@/lib/use-is-mobile";
 
 interface Position {
   cur: number;
@@ -9,7 +10,9 @@ interface Position {
 }
 
 export default function Presentation() {
+  const [mounted, setMounted] = useState(false);
   const [{ cur, step }, setState] = useState<Position>({ cur: 0, step: 0 });
+  const isMobile = useIsMobile();
 
   const show = useCallback((i: number, atStart = true) => {
     const idx = Math.max(0, Math.min(SLIDES.length - 1, i));
@@ -35,6 +38,10 @@ export default function Presentation() {
       }
       return { cur, step };
     });
+  }, []);
+
+  useEffect(() => {
+    setMounted(true);
   }, []);
 
   useEffect(() => {
@@ -100,20 +107,29 @@ export default function Presentation() {
     return () => document.removeEventListener("wheel", onWheel);
   }, []);
 
+  if (!mounted) {
+    return <main className="fixed inset-0 bg-stage" />;
+  }
+
   const onStageClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.clientX < window.innerWidth * 0.25) prev();
     else next();
   };
 
   const progress = ((cur + 1) / SLIDES.length) * 100;
-  const ActiveSlide = SLIDES[cur].Component;
+  const ActiveSlide = isMobile
+    ? SLIDES[cur].MobileComponent
+    : SLIDES[cur].Component;
 
   return (
     <main className="fixed inset-0 flex items-center justify-center">
       <div
         key={cur}
-        className="slide-container absolute aspect-video bg-white rounded-[10px] shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden"
-        style={{ width: "min(94vw, calc(94vh * 16 / 9))" }}
+        className={
+          isMobile
+            ? "slide-container absolute bg-white overflow-hidden h-[100dvh] aspect-[9/16]"
+            : "slide-container absolute aspect-video bg-white rounded-[10px] shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden w-[min(94vw,calc(94vh*16/9))]"
+        }
         onClick={onStageClick}
       >
         <ActiveSlide step={step} />
