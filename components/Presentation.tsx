@@ -26,7 +26,7 @@ export default function Presentation() {
     : "aspect-video rounded-[10px] shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden w-[min(94vw,calc(88vh*16/9))]";
 
   return (
-    <main className="fixed inset-0 flex items-center justify-center mx-[6vw] py-10">
+    <main className="fixed inset-0 flex items-center justify-center mx-[6vw] lg:mx-[8vw] py-10">
       <Swiper
         modules={[Mousewheel, Keyboard]}
         slidesPerView={1}
