@@ -4,7 +4,6 @@ import { Step } from "./SlideBase";
 export default function Slide18Vision({ step }: SlideProps) {
   return (
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
-      <rect width="1280" height="720" fill="#FFFFFF" />
       <g className="module">
         <text
           x="64"

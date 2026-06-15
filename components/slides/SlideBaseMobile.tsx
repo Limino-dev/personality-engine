@@ -37,7 +37,6 @@ export function SlideBaseMobile({
           />
         </marker>
       </defs>
-      <rect width="720" height="1280" fill="#FFFFFF" />
       <g className="module">
         <text
           x="40"

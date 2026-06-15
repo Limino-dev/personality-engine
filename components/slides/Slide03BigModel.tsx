@@ -17,7 +17,7 @@ export default function Slide03BigModel({ step }: SlideProps) {
           </text>
         </Step>
         <Step show={step >= 2}>
-          <g transform="translate(89,272) scale(1.62)">
+          <g transform="translate(89,272) scale(1.296)">
             <line x1="60" y1="142" x2="640" y2="142" stroke="#E3E2DF" strokeWidth="1" />
             <line x1="60" y1="142" x2="60" y2="16" stroke="#E3E2DF" strokeWidth="1" />
             <path

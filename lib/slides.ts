@@ -108,28 +108,29 @@ export interface SlideMeta {
   Component: ComponentType<SlideProps>;
   MobileComponent: ComponentType<SlideProps>;
   nostep: boolean;
+  bg: string;
 }
 
 export const SLIDES: SlideMeta[] = [
-  { Component: Slide01Cover, MobileComponent: Slide01CoverMobile, nostep: true },
-  { Component: Slide02Part01, MobileComponent: Slide02Part01Mobile, nostep: true },
-  { Component: Slide03BigModel, MobileComponent: Slide03BigModelMobile, nostep: false },
-  { Component: Slide04TwoGaps, MobileComponent: Slide04TwoGapsMobile, nostep: false },
-  { Component: Slide05ExperienceCurve, MobileComponent: Slide05ExperienceCurveMobile, nostep: false },
-  { Component: Slide06Subjectivity, MobileComponent: Slide06SubjectivityMobile, nostep: false },
-  { Component: Slide07Part02, MobileComponent: Slide07Part02Mobile, nostep: true },
-  { Component: Slide08PersonalityEngine, MobileComponent: Slide08PersonalityEngineMobile, nostep: false },
-  { Component: Slide09Misconceptions, MobileComponent: Slide09MisconceptionsMobile, nostep: false },
-  { Component: Slide10LStack, MobileComponent: Slide10LStackMobile, nostep: false },
-  { Component: Slide11Mechanism, MobileComponent: Slide11MechanismMobile, nostep: false },
-  { Component: Slide12CoreValue, MobileComponent: Slide12CoreValueMobile, nostep: false },
-  { Component: Slide13Competition, MobileComponent: Slide13CompetitionMobile, nostep: false },
-  { Component: Slide14Productivity, MobileComponent: Slide14ProductivityMobile, nostep: false },
-  { Component: Slide15Part03, MobileComponent: Slide15Part03Mobile, nostep: true },
-  { Component: Slide16AdCreative, MobileComponent: Slide16AdCreativeMobile, nostep: false },
-  { Component: Slide17WorkLogic, MobileComponent: Slide17WorkLogicMobile, nostep: false },
-  { Component: Slide18Vision, MobileComponent: Slide18VisionMobile, nostep: false },
-  { Component: Slide19Landscape, MobileComponent: Slide19LandscapeMobile, nostep: false },
+  { Component: Slide01Cover, MobileComponent: Slide01CoverMobile, nostep: true, bg: "#FFFFFF" },
+  { Component: Slide02Part01, MobileComponent: Slide02Part01Mobile, nostep: true, bg: "#FBFAF8" },
+  { Component: Slide03BigModel, MobileComponent: Slide03BigModelMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide04TwoGaps, MobileComponent: Slide04TwoGapsMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide05ExperienceCurve, MobileComponent: Slide05ExperienceCurveMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide06Subjectivity, MobileComponent: Slide06SubjectivityMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide07Part02, MobileComponent: Slide07Part02Mobile, nostep: true, bg: "#FBFAF8" },
+  { Component: Slide08PersonalityEngine, MobileComponent: Slide08PersonalityEngineMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide09Misconceptions, MobileComponent: Slide09MisconceptionsMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide10LStack, MobileComponent: Slide10LStackMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide11Mechanism, MobileComponent: Slide11MechanismMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide12CoreValue, MobileComponent: Slide12CoreValueMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide13Competition, MobileComponent: Slide13CompetitionMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide14Productivity, MobileComponent: Slide14ProductivityMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide15Part03, MobileComponent: Slide15Part03Mobile, nostep: true, bg: "#FBFAF8" },
+  { Component: Slide16AdCreative, MobileComponent: Slide16AdCreativeMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide17WorkLogic, MobileComponent: Slide17WorkLogicMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide18Vision, MobileComponent: Slide18VisionMobile, nostep: false, bg: "#FFFFFF" },
+  { Component: Slide19Landscape, MobileComponent: Slide19LandscapeMobile, nostep: false, bg: "#FFFFFF" },
 ];
 
 export const stepsOf = (i: number): number => {

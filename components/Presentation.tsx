@@ -22,24 +22,29 @@ export default function Presentation() {
 
   const progress = ((activeIndex + 1) / SLIDES.length) * 100;
   const containerClass = isMobile
-    ? "bg-white overflow-hidden h-[100dvh] aspect-[9/16]"
-    : "aspect-video bg-white rounded-[10px] shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden w-[min(94vw,calc(94vh*16/9))]";
+    ? "overflow-hidden h-[min(100dvh,calc(100vw*16/9))] aspect-[9/16] rounded-[8px]"
+    : "aspect-video rounded-[10px] shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden w-[min(94vw,calc(88vh*16/9))]";
 
   return (
-    <main className="fixed inset-0 flex items-center justify-center">
+    <main className="fixed inset-0 flex items-center justify-center mx-[6vw] py-10">
       <Swiper
         modules={[Mousewheel, Keyboard]}
         slidesPerView={1}
         speed={350}
+        loop
         mousewheel={{ enabled: true, forceToAxis: false, sensitivity: 1 }}
         keyboard={{ enabled: true }}
-        onSlideChange={(s) => setActiveIndex(s.activeIndex)}
+        onSlideChange={(s) => setActiveIndex(s.realIndex)}
         className={containerClass}
       >
         {SLIDES.map((meta, i) => {
           const ActiveSlide = isMobile ? meta.MobileComponent : meta.Component;
           return (
-            <SwiperSlide key={i} className="slide-container">
+            <SwiperSlide
+              key={i}
+              className="slide-container"
+              style={{ backgroundColor: meta.bg }}
+            >
               <ActiveSlide step={stepsOf(i)} />
             </SwiperSlide>
           );
@@ -56,7 +61,7 @@ export default function Presentation() {
       </div>
 
       <div className="fixed right-[18px] bottom-3.5 text-white/[0.32] text-xs tracking-[0.5px] z-10 select-none">
-        ← → 翻页 · 滚轮上下 · 空格前进
+        {isMobile ? "左右滑动翻页" : "← → 键 · 滚轮 · 鼠标拖拽 翻页"}
       </div>
     </main>
   );

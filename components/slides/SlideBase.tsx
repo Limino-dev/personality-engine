@@ -37,7 +37,6 @@ export function SlideBase({
           />
         </marker>
       </defs>
-      <rect width="1280" height="720" fill="#FFFFFF" />
       <g className="module">
         <text
           x="64"

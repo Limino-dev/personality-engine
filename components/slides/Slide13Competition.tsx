@@ -6,7 +6,7 @@ export default function Slide13Competition({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="10 · 应用之争" title="竞争的主战场在上移" page={10}>
         <Step show={step >= 2}>
-          <g transform="translate(75,240) scale(1.66)">
+          <g transform="translate(75,240) scale(1.328)">
             <rect
               x="120"
               y="20"

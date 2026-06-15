@@ -6,7 +6,7 @@ export default function Slide12CoreValue({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="09 · 核心价值" title="同样的算力，不同的价值" page={9}>
         <Step show={step >= 2}>
-          <g transform="translate(75,255) scale(1.66)">
+          <g transform="translate(75,255) scale(1.328)">
             <rect
               x="20"
               y="86"

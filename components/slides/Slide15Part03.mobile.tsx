@@ -3,7 +3,6 @@ import type { SlideProps } from "@/lib/slides";
 export default function Slide15Part03Mobile({}: SlideProps) {
   return (
     <svg viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
-      <rect width="720" height="1280" fill="#FBFAF8" />
       <g className="module">
         <text
           x="360"

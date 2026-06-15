@@ -51,7 +51,7 @@ export default function Slide19Landscape({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="15 · 多维度生产力" title="人格引擎生产力版图" page={15}>
         <Step show={step >= 2}>
-          <g transform="translate(164,170) scale(1.4)">
+          <g transform="translate(164,170) scale(1.12)">
             {LINES.map((l, i) => (
               <line
                 key={i}

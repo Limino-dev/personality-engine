@@ -39,7 +39,7 @@ export default function Slide11Mechanism({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="08 · 机制" title="人格如何运转" page={8}>
         <Step show={step >= 2}>
-          <g transform="translate(128,150) scale(1.6)">
+          <g transform="translate(128,150) scale(1.28)">
             {MECHANISM_NODES.map((n, i) => (
               <line
                 key={i}

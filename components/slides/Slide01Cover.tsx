@@ -4,7 +4,6 @@ import { LOGO_DATA_URL } from "@/lib/logo";
 export default function Slide01Cover({}: SlideProps) {
   return (
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
-      <rect width="1280" height="720" fill="#FFFFFF" />
       <g className="module">
         <defs>
           <clipPath id="lg">

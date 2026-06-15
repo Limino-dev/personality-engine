@@ -6,7 +6,7 @@ export default function Slide09Misconceptions({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="06 · 差异性" title="容易被认错的三件事" page={6}>
         <Step show={step >= 2}>
-          <g transform="translate(75,248) scale(1.66)">
+          <g transform="translate(75,248) scale(1.328)">
             <rect x="0" y="0" width="214" height="170" rx="16" fill="#ECECEA" />
             <text
               x="24"

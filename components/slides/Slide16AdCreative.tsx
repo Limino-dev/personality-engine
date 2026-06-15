@@ -10,7 +10,7 @@ export default function Slide16AdCreative({ step }: SlideProps) {
         page={12}
       >
         <Step show={step >= 2}>
-          <g transform="translate(75,188) scale(1.66)">
+          <g transform="translate(75,188) scale(1.328)">
             <rect
               x="40"
               y="34"

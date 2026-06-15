@@ -3,7 +3,6 @@ import type { SlideProps } from "@/lib/slides";
 export default function Slide02Part01({}: SlideProps) {
   return (
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
-      <rect width="1280" height="720" fill="#FBFAF8" />
       <g className="module">
         <text
           x="64"

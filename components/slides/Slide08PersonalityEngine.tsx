@@ -6,7 +6,7 @@ export default function Slide08PersonalityEngine({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="05 · Agent人格引擎" title="让Agent长出判断的主体" page={5}>
         <Step show={step >= 2}>
-          <g transform="translate(75,225) scale(1.66)">
+          <g transform="translate(75,225) scale(1.328)">
             <rect
               x="180"
               y="16"

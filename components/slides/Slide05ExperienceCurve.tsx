@@ -6,7 +6,7 @@ export default function Slide05ExperienceCurve({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="03 · 体验曲线" title="演示时惊艳，业务里失望" page={3}>
         <Step show={step >= 2}>
-          <g transform="translate(75,205) scale(1.66)">
+          <g transform="translate(75,205) scale(1.328)">
             <line x1="56" y1="190" x2="644" y2="190" stroke="#E3E2DF" strokeWidth="1" />
             <line x1="56" y1="190" x2="56" y2="26" stroke="#E3E2DF" strokeWidth="1" />
             <text

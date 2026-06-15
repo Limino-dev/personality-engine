@@ -24,7 +24,7 @@ export default function Slide10LStack({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="07 · L-Stack架构" title="利米诺人格栈" page={7}>
         <Step show={step >= 2}>
-          <g transform="translate(89,178) scale(1.62)">
+          <g transform="translate(89,178) scale(1.296)">
             <rect x="120" y="16" width="440" height="32" rx="8" fill="#6F68AC" />
             <text
               x="340"

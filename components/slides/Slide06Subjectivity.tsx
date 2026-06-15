@@ -6,7 +6,7 @@ export default function Slide06Subjectivity({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="04 · 人的主体性" title="同样的模型，不同的人" page={4}>
         <Step show={step >= 2}>
-          <g transform="translate(75,230) scale(1.66)">
+          <g transform="translate(75,230) scale(1.328)">
             <rect
               x="44"
               y="83"

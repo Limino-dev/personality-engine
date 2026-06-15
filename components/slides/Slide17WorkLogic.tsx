@@ -40,7 +40,7 @@ export default function Slide17WorkLogic({ step }: SlideProps) {
     <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
       <SlideBase chapter="13 · 工作逻辑" title="广告创意人格的工作逻辑" page={13}>
         <Step show={step >= 2}>
-          <g transform="translate(150,168) scale(1.42)">
+          <g transform="translate(150,168) scale(1.136)">
             {FLOW_ARROWS.map((d, i) => (
               <path
                 key={i}

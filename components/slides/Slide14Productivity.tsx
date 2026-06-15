@@ -44,7 +44,7 @@ export default function Slide14Productivity({ step }: SlideProps) {
           </text>
         </Step>
         <Step show={step >= 2}>
-          <g transform="translate(75,308) scale(1.66)">
+          <g transform="translate(75,308) scale(1.328)">
             {SHACKLES.map((s, i) => (
               <g key={i} transform={`translate(${i * 233},0)`}>
                 <rect x="0" y="0" width="214" height="150" rx="16" fill="#F2F1EF" />
